@@ -26,13 +26,19 @@
  //}
  //sayHello();
  //echo $name;
-
  function sayBye($name){
     $name = 'pekka';
     echo "bye $name";
  }
  sayBye($name);
  echo $name;
+
+ //function sayBye(&$name){
+   // $name = 'pekka';
+   // echo "bye $name";
+ //}
+ //sayBye($name);
+ //echo $name;
 
 
 
