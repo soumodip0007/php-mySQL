@@ -1,14 +1,12 @@
 <?php
 
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Project Header & Footer</title>
-</head>
-<body>
+
+<?php include('header.php');?>
+
+<?php include('footer.php');?>
     
-</body>
+
 </html>
