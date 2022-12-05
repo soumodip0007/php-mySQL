@@ -9,7 +9,15 @@ if(!$conn){
 }
 
 //write query for all houses
-$sql = 'SELECT title, components, id FROM houses'
+$sql = 'SELECT title, components, id FROM houses';
+
+//make query and get result
+$result = mysqli_query($conn, $sql);
+
+//fetch the resulting rows as an array
+$houses = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+print_r($houses);
 
 ?>
 <!DOCTYPE html>
