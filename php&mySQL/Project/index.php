@@ -47,13 +47,12 @@ $houses = mysqli_fetch_all($result, MYSQLI_ASSOC);
                     </ul>
                 </div>
                 <div class="card-action right-align">
-                  <a class="brand-text" href="#">more info</a>
+                  <a class="brand-text" href="details.php?id=<?php echo $house['id']?>">more info</a>
                 </div>
              </div>
            </div>
 
       <?php endforeach; ?>
-
     <?php if(count($houses) >= 2): ?>
       <p>there are 2 or more houses</p>
       <?php  else:  ?>
