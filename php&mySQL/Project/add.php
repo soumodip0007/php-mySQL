@@ -11,6 +11,10 @@
 //    echo $_POST['title'];
 //    echo $_POST['components'];
 //}
+
+include('config/db_connect.php');
+
+
 $title = $email = $components ='';
 $errors = array('email'=>'', 'title'=>'', 'components'=>'');
 
@@ -55,8 +59,24 @@ if(isset($_POST['submit'])){
     if(array_filter($errors)){
         //echo 'errors in the form';
     }else{
-        //echo 'form is valid'
-        header('Location: index.php');
+
+        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $title = mysqli_real_escape_string($conn, $_POST['title']);
+        $components = mysqli_real_escape_string($conn, $_POST['components']);
+
+        //craete sql
+        $sql = "INSERT INTO houses(title, email, components) VALUES ('$title', '$email', '$components')";
+
+        //save to db and check
+        if(mysqli_query($conn, $sql)){
+            //success
+            header('Location: index.php');
+        } else {
+            echo 'query errpr:' .mysqli_error($conn);
+        }
+
+        //echo 'form is valid';
+        //header('Location: index.php');
     }
 
 } //end of POST check
