@@ -4,8 +4,9 @@
   $name = 'vulk';
   $age = 30;
 
-  //$name = 'pekka';
-  //echo $name;
+  $name = 'pekka';
+  echo $name;
+  echo $age;
   ?>
 
   <!DOCTYPE html>

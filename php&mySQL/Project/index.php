@@ -38,6 +38,7 @@ $houses = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
            <div class="col s6 md3">
              <div class="card z-depth-0">
+              <img src="img/PngItem_325065.png" class="house">
                 <div class="card-content center">
                     <h6><?php echo htmlspecialchars($house['title']); ?></h6>
                     <ul>
