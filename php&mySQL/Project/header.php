@@ -1,3 +1,20 @@
+<?php
+
+session_start();
+
+//$_SESSION['name'] = 'Pekka';
+
+//if($_SERVER['QUERY_STRING'] == 'noname'){
+    //unset($_SESSION['name']);
+    //session_unset();
+//}
+
+//$name = $_SESSION['name'] ?? 'Guest';
+
+?>
+
+
+
 <head>
     <title>Pekka's Play House</title>
      <!-- Compiled and minified CSS -->
@@ -29,6 +46,7 @@
         <div class="container">
             <a href="#" class="brand-logo brand-text">Pekka's Play House</a>
             <ul id="nav-mobile" class="right hide-on-small-and-down">
+                <li class="grey-text">Hello <?php echo htmlspecialchars($name); ?></li>
                 <li><a href="add.php" class="btn brand z-depth-0">Add a House</a></li>
             </ul>
         </div>    

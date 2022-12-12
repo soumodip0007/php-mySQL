@@ -16,6 +16,8 @@ if(isset($_POST['submit'])){
     $_SESSION['name'] = $_POST['name'];
 
     echo $_SESSION['name'];
+
+    header('location: ../Project/index.php');
 }
 
 
