@@ -21,18 +21,17 @@
     ['name' => 'ice-spirit', 'price' => '10'],
     ];
 
-    //foreach($products as $product){
-     //   echo $product['name'] . ' - ' . $product['price'];
-     //   echo '<br />';
-    //}
+    foreach($products as $product){
+        echo $product['name'] . ' - ' . $product['price'];
+        echo '<br />';
+    }
     
     //$i = 0;
-
-   // while($i <count($products)){
-    //    echo $products[$i]['name'];
+    //while($i <count($products)){
+    //    echo $products[$i]['name']. ' - ' . $products[$i]['price'];
     //    echo '<br />';
-     //   $i++;
-   // }
+    //   $i++;
+    //}
 
 ?>
 

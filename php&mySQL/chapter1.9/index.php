@@ -22,20 +22,20 @@
     ];
 
     //foreach($products as $product){
-    //    if($product['price'] < 15 || $product['price'] > 5000){
+    //   if($product['price'] < 15 || $product['price'] > 5000){
     //        echo $product['name'] . '<br />';
     //    }
     //}
 
-    foreach($products as $product){
-        if($product['name'] === 'pekka'){
-            break;
-        }
-        if($product['price'] > 15){
-            continue;
-        }
-        echo $product['name'] . '<br />';
-    }
+    //foreach($products as $product){
+    //    if($product['name'] === 'pekka'){
+    //        break;
+    //    }
+    //    if($product['price'] > 15){
+    //        continue;
+    //    }
+    //    echo $product['name'] . '<br />';
+    //}
 
 ?>
 

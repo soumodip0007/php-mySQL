@@ -5,8 +5,8 @@
   $age = 30;
 
   $name = 'pekka';
-  echo $name;
-  echo $age;
+  //echo $name;
+  //echo $age;
   ?>
 
   <!DOCTYPE html>

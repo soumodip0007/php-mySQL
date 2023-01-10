@@ -2,13 +2,12 @@
 <?php
 
   // comparison booolean 
-  //echo true;"1"
-  //echo false;""
+  //echo true;"1";
+  //echo false;"";
   
   //numbers
   //echo 5 < 10;
   //echo 5 > 10;
-  //echo 5 = 10;
   //echo 10 == 10;
   //echo 5 != 10;
   //echo 5 <= 5;
@@ -25,7 +24,7 @@
   //echo 5 === 5;
 
   //echo true == "1";
-  //echo flase == "";
+  //echo false == "";
 
 ?>
 

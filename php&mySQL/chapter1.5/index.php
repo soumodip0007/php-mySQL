@@ -8,7 +8,7 @@
   
   $ages = [20, 30, 40, 50];
   //print_r($ages);
-  $ages[1] = 25;
+  //$ages[1] = 25;
   //print_r($ages);
   $ages[] = 60;
   //print_r($ages);
@@ -17,7 +17,7 @@
   //print_r($ages);
   //echo count($ages);
 
-  $peopleThree = array_merge($peopleOne, $peopleTwo);
+  $peopleThree = array_merge($peopleOne, $peopleTwo );
   //print_r($peopleThree);
 
   //associative arrays(keys & value pairs) -------------------
